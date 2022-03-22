@@ -73,9 +73,12 @@ FripScore：统计落在Peaks里面的reads数量与所有比对到基因组上r
 
 > The fraction of reads in called peak regions ([FRiP score](https://www.encodeproject.org/data-standards/terms/#enrichment)) should be >0.3, though values greater than 0.2 are acceptable. For EN-TEx tissues, FRiP scores will not be enforced as QC metric. TSS enrichment remains in place as a key signal to noise measure
 
-<u>待补充</u>
-
-
+| Sample            | FripScore |
+| ----------------- | --------- |
+| BM-0228-ATAC      | 8.04%     |
+| G1ER-2H-0228-ATAC | 12.28%    |
+| HX-ATAC-5         | 11.56%    |
+| from Encode：G1E  | 13%       |
 
 ## 生物学意义分析
 
