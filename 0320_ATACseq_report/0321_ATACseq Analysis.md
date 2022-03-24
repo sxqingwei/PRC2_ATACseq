@@ -6,21 +6,21 @@
 
 ## 样品信息
 
-|       样本名称       |      BM-0228-ATAC      |   G1ER-2H-0228-ATAC    |    HX-ATAC-5     |
+|       样本名称       |   G1ER-2H-0228-ATAC    |      BM-0228-ATAC      |    HX-ATAC-5     |
 | :------------------: | :--------------------: | :--------------------: | :--------------: |
 |       样本编号       |    FKDL220019772-1a    |    FKDL220019773-1a    | FKDL220011795-1a |
-|       细胞类型       |           BM           |          G1E           |      WT-R3       |
+|       细胞类型       |        **G1E**         |     **BM(WT_R3)**      |    **WT-R3**     |
 |      分选细胞数      |           -            |           -            |        -         |
 |      分选回测率      |           -            |           -            |        -         |
 |   Peak size（bp）    |          283           |          236           |       333        |
 | QPCR摩尔浓度(nmol/L) |         10.73          |         12.78          |      14.96       |
 |       峰图描述       | 含小片段，插入片段偏小 | 含小片段，插入片段偏小 |     含小片段     |
 |     库检综合结果     |         不合格         |         不合格         |      不合格      |
-|       下级时间       |         03/20          |         03/20          |      03/20       |
+|     数据释放时间     |         03/20          |         03/20          |      03/20       |
 
 **qc文库峰图：**
 
-BM-0228-ATAC、G1ER-2H-0228-ATAC
+G1ER-2H-0228-ATAC、BM-0228-ATAC
 
 ![](https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/0d88e762750de1e3c6fe9f8b0fcac7d.jpg)
 
@@ -34,7 +34,7 @@ HX-ATAC-5
 
 **流程：rawdata进行去接头、过滤低质量序列，得到clean data；将clean data比对到小鼠参考基因组（mm10）；再将比对上的序列去除PCR重复和线粒体基因，得到有效数据进行下游分析**
 
-|                                                              |     BM-0228-ATAC      |    G1ER-2H-0228-ATAC     |        HX-ATAC-5         | acceptable base line |
+|                                                              |   G1ER-2H-0228-ATAC   |       BM-0228-ATAC       |        HX-ATAC-5         | acceptable base line |
 | :----------------------------------------------------------: | :-------------------: | :----------------------: | :----------------------: | :------------------: |
 |                       **rawdata size**                       | 4.8G，about 76M reads | 2.77G，about 45.5M reads | 2.73G，about 38.4M reads |          -           |
 |                      **cleandata size**                      |         3.35G         |           1.7G           |          2.12G           |          -           |
@@ -45,10 +45,10 @@ clean data General Statistics：
 
 | Sample Name         | % Dups | % GC | Read Length | M Seqs |
 | :------------------ | :----- | :--- | :---------- | :----- |
-| BM-0228-ATAC_1      | 61.0%  | 45%  | 85 bp       | 37.0   |
-| BM-0228-ATAC_2      | 62.0%  | 45%  | 85 bp       | 37.0   |
-| G1ER-2H-0228-ATAC_1 | 32.0%  | 50%  | 69 bp       | 22.7   |
-| G1ER-2H-0228-ATAC_2 | 33.2%  | 50%  | 68 bp       | 22.7   |
+| G1ER-2H-0228-ATAC_1 | 61.0%  | 45%  | 85 bp       | 37.0   |
+| G1ER-2H-0228-ATAC_2 | 62.0%  | 45%  | 85 bp       | 37.0   |
+| BM-0228-ATAC_1      | 32.0%  | 50%  | 69 bp       | 22.7   |
+| BM-0228-ATAC_2      | 33.2%  | 50%  | 68 bp       | 22.7   |
 | HX-ATAC-5_1         | 39.3%  | 47%  | 104 bp      | 19.2   |
 | HX-ATAC-5_2         | 39.6%  | 46%  | 104 bp      | 19.2   |
 
@@ -62,8 +62,8 @@ cleandata QC报告: https://github.com/sxqingwei/PRC2_ATACseq/blob/main/0320_ATA
 
 |                       | Peaks Counts |
 | :-------------------: | :----------: |
-|   **BM-0228-ATAC**    |     2036     |
-| **G1ER-2H-0228-ATAC** |     7744     |
+| **G1ER-2H-0228-ATAC** |     2036     |
+|   **BM-0228-ATAC**    |     7744     |
 |     **HX-ATAC-5**     |    11243     |
 | **from Encode：G1E**  |    25095     |
 
@@ -75,8 +75,8 @@ FripScore：统计落在Peaks里面的reads数量与所有比对到基因组上r
 
 | Sample            | FripScore |
 | ----------------- | --------- |
-| BM-0228-ATAC      | 8.04%     |
-| G1ER-2H-0228-ATAC | 12.28%    |
+| G1ER-2H-0228-ATAC | 8.04%     |
+| BM-0228-ATAC      | 12.28%    |
 | HX-ATAC-5         | 11.56%    |
 | from Encode：G1E  | 13%       |
 
@@ -94,11 +94,11 @@ FripScore：统计落在Peaks里面的reads数量与所有比对到基因组上r
 
 **G1ER2H、5_WTR3均较多overlap**
 
-<img src="https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/venn1.png" style="zoom: 12%;" />
+<img src="https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/venn1.png" style="zoom: 18%;" />
 
-<img src="https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/venn2.png" style="zoom: 12%;" />
+<img src="https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/venn2.png" style="zoom: 18%;" />
 
-<img src="https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/venn3.png" style="zoom: 12%;" />
+<img src="https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/venn3.png" style="zoom: 14%;" />
 
 ### 2）5_WTR3和R3在WT高表达的基因对比：
 
@@ -106,13 +106,17 @@ FripScore：统计落在Peaks里面的reads数量与所有比对到基因组上r
 
 > R3_Hi: RNAseq结果中，WT_R3阶段表达量top1500的基因
 
-<img src="https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/venn4.png" style="zoom: 12%;" />
+<img src="https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/venn4.png" style="zoom: 13%;" />
+
+<img src="https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/venn8.png" style="zoom: 19%;" />
 
 ### 3）5_WTR3和R3在WT低表达的基因对比：
 
 **overlap较少，符合预期**
 
-<img src="https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/venn5.png" style="zoom: 12%;" />
+<img src="https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/venn5.png" style="zoom: 14%;" />
+
+<img src="https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/venn9.png" style="zoom: 18%;" />
 
 ### 4）和Muscle组织特异、neuro2a细胞特异表达基因对比：
 
@@ -120,12 +124,12 @@ FripScore：统计落在Peaks里面的reads数量与所有比对到基因组上r
 
 > Muscle: 肌肉特异表达基因
 
-<img src="https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/venn6.png" style="zoom: 12%;" />
+<img src="https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/venn6.png" style="zoom: 18%;" />
 
 > neuro2a：小鼠神经母细胞瘤细胞系特异表达基因
 
-<img src="https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/venn7.png" style="zoom: 12%;" />
+<img src="https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/venn7.png" style="zoom: 18%;" />
 
 
 
-gene set from [PaGenBase](http://bioinf.xmu.edu.cn/PaGenBase/index.jsp)
+gene set from [PaGenBase](http://bioinf.xmu.edu.cn/PaGenBase/index.jsp)`
