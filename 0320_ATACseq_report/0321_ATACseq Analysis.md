@@ -2,7 +2,7 @@
 
 # ATACseq Data Analysis
 
-[^Author：QwEi     Date：2022/03/22     not final version，to be contined，ddl 2020/3/25]: 
+[^Author：QwEi     Date：2022/03/22     not final version，to be contined]: 
 
 ## 样品信息
 
@@ -110,6 +110,10 @@ FripScore：统计落在Peaks里面的reads数量与所有比对到基因组上r
 
 <img src="https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/venn8.png" style="zoom: 19%;" />
 
+> R3_HI_4000:RNAseq结果中，WT_R3阶段表达量top4000的基因 
+
+<img src="https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/venn11.png" style="zoom: 19%;" />
+
 ### 3）5_WTR3和R3在WT低表达的基因对比：
 
 **overlap较少，符合预期**
@@ -133,3 +137,8 @@ FripScore：统计落在Peaks里面的reads数量与所有比对到基因组上r
 
 
 gene set from [PaGenBase](http://bioinf.xmu.edu.cn/PaGenBase/index.jsp)`
+
+#### 5)BM和5_WT_R3对比：
+
+<img src="https://github.com/sxqingwei/PRC2_ATACseq/raw/main/0320_ATACseq_report/add_info/venn10.png" style="zoom: 19%;" />
+
