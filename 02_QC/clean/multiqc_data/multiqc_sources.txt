@@ -1,3 +1,0 @@
-Module	Section	Sample Name	Source
-FastQC	all_sections	12_9D_Mut_R2_1	/Volumes/zengqw_HD/PRC2/ATACseq/0302_ATAC/02_QC/clean/12_9D_Mut_R2_1.clean_fastqc.zip
-FastQC	all_sections	12_9D_Mut_R2_2	/Volumes/zengqw_HD/PRC2/ATACseq/0302_ATAC/02_QC/clean/12_9D_Mut_R2_2.clean_fastqc.zip
